@@ -41,6 +41,7 @@ void AAuraEffectActor::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent,
 				//TODO: Change This to Gameplay Effect
 				UAuraAttributeSet* MutableAttributeSet = const_cast<UAuraAttributeSet*>(AuraAttributeSet); 
 				MutableAttributeSet->SetHealth(MutableAttributeSet->GetHealth() + 25);
+				MutableAttributeSet->SetMana(MutableAttributeSet->GetMana() + 25);
 				Destroy();
 			}
 		}
