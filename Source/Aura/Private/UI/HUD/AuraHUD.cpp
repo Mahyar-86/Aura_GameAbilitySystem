@@ -12,6 +12,7 @@ TObjectPtr<UOverlayWidgetController> AAuraHUD::GetOverlayWidgetController(const 
 	{
 		OverlayWidgetController = NewObject<UOverlayWidgetController>(this, OverlayWidgetControllerClass);
 		OverlayWidgetController->SetWidgetControllerParams(WidgetControllerParams);
+		OverlayWidgetController->BindCallbacksToDependencies();
 
 		return OverlayWidgetController;
 	}

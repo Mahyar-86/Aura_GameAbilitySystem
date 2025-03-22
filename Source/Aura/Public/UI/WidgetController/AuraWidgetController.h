@@ -58,4 +58,6 @@ protected:
 	TObjectPtr<UAttributeSet> AttributeSet;
 
 	virtual void BroadcastInitialValues();
+
+	virtual void BindCallbacksToDependencies();
 };
