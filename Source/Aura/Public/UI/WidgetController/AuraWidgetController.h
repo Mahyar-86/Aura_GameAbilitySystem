@@ -56,4 +56,6 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, Category="WidgetController")
 	TObjectPtr<UAttributeSet> AttributeSet;
+
+	virtual void BroadcastInitialValues();
 };
