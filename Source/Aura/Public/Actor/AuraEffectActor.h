@@ -23,6 +23,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Effect")
 	TSubclassOf<UGameplayEffect> InstantGameplayEffectClass;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Effect")
+	TSubclassOf<UGameplayEffect> DurationGameplayEffectClass;
+
 	UFUNCTION(BlueprintCallable)
 	void ApplyEffectToTarget(AActor* TargetActor, TSubclassOf<UGameplayEffect> GameplayEffectClass) const;
 };
